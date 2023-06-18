@@ -70,7 +70,7 @@ const ChatItem = ({ user }: { user: boolean }) => {
           <span
             className={`text-[#c4c4c4] block mb-1 text-[13px] capitalize pl-[13px]`}
           >
-            {user ? "you" : "Joel"}
+            {user ? "you" : "Temi"}
           </span>
           <div className="rounded-[1rem] text-[#6a6a6a] bg-[#f1f1f1] text-[15px] px-3 py-3 w-full">
             Hello People
@@ -358,6 +358,7 @@ const Room = () => {
                         <ToggleButton value={"pinned"}>
                           <RiLayoutFill size={20} />
                         </ToggleButton>
+
                         <ToggleButton value={"mason"}>
                           <RiLayoutMasonryFill size={20} />
                         </ToggleButton>
@@ -416,18 +417,18 @@ const Room = () => {
                               size={10}
                               className="mr-[6px] relative -top-[2px]"
                             />{" "}
-                            Name
+                            You
                           </div>
                         </div>
                       </div>
 
                       {/* peerids */}
 
-                      {peerIds.map((peer: string, i: number) => (
+                      {/* {peerIds.map((peer: string, i: number) => (
                         <div className="bg-black w-[100px] h-[100px]" key={i}>
                           <PeerVideoAudioElem key={i} peerIdAtIndex={peer} />
                         </div>
-                      ))}
+                      ))} */}
                     </div>
                   </div>
 
